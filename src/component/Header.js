@@ -8,7 +8,7 @@ const Header = () => {
         <div className="container main-info">
           <div className="row about-row d-flex justify-content-center">
             <div className="col-6 d-flex justify-content-center">
-              <div className="display-1 header-title text-white text-center">Welcome to our Future</div>
+              <div className="display-1 header text-white text-center">Welcome to our Future</div>
             </div>
             <div className="col-md-7">
               <div className="text-background">
