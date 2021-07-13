@@ -2,9 +2,9 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <div className="section" id="contact-us">
-      <div className="container-fluid contact-us-container">
-        <div className="row contact-us-row py-5">
+    <section className="site-section contact-us-container" id="contact-us">
+      <div className="container-fluid">
+        <div className="row contact-us-row">
           <div className="col-12 col-md-9">
             <div className="display-4 text-center mb-5">Contact Us</div>
             <p className="lead-contact-us-text">If you would like us to add your charging station to our ever growing network, feel free to drop us an email with a brief description along with your contact details and we will get back to you.</p>
@@ -33,7 +33,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
