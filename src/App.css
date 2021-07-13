@@ -6,6 +6,9 @@
   --primary-white-smoke: hsl(0, 0%, 96%);
   --primary-pale-blue: hsl(240, 100%, 96%);
   --primary-orange: hsl(31, 86%, 49%);
+  --primary-navy-blue: hsl(240, 100%, 27%);
+  --primary-dark-navy-blue: hsl(240, 100%, 4%);
+  --primary-light-navy-blue: hsl(240, 100%, 96%);
 }
 
 body {
@@ -150,3 +153,42 @@ p.lead-header-text {
   text-align: justify;
   margin-bottom: 0;
 }
+
+/******************************* ABOUT *******************************/
+
+/******************************* MAP *******************************/
+
+/******************************* CONTACT *******************************/
+
+.contact-us-container {
+  background-color: var(--primary-light-navy-blue);
+}
+
+.contact-us-row {
+  background-color: var(--primary-light-navy-blue);
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+p.lead-contact-us-text {
+  font-weight: 500;
+  text-align: justify;
+}
+
+.email-container {
+  height: 100%;
+}
+
+.btn-contact-submit {
+  background-color: var(--primary-navy-blue);
+  border-color: var(--primary-dark-navy-blue);
+}
+
+.btn-contact-submit:hover {
+  background-color: hsl(240, 100%, 85%);
+  border-color: var(--primary-navy-blue);
+}
+
+/******************************* FOOTER *******************************/
