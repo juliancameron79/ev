@@ -192,3 +192,55 @@ p.lead-contact-us-text {
 }
 
 /******************************* FOOTER *******************************/
+
+.footer {
+  background-color: var(--primary-dark-navy-blue);
+  height: auto;
+}
+
+.copyright {
+  color: var(--primary-white);
+  font-size: 0.7rem;
+  margin: 0.2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.social-icons-list-items {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+ul.social-icons {
+  margin-bottom: 8px;
+}
+
+.social-icons li a {
+  margin-bottom: 0;
+  width: 32px;
+  height: 32px;
+  padding: 12px;
+  border-radius: 25%;
+  font-size: 13px;
+  line-height: 7px;
+  text-align: center;
+  color: #fff;
+  border: 2px solid var(--primary-dark-navy-blue);
+  -moz-transition: all 0.35s ease-in-out;
+  -webkit-transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out;
+}
+
+.social-icons li a:hover {
+  border: 2px solid var(--primary-white);
+}
+
+.social-icons {
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+h5.footer-contact-title {
+  font-weight: 300;
+}
