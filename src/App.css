@@ -33,7 +33,8 @@ body {
   border: 0 !important;
 }
 
-.navbar-brand {
+.brand-icon {
+  margin-left: 0.75rem;
   -webkit-animation: navIconAnimate 1s both;
   animation: navIconAnimate 1s both;
 }
@@ -43,11 +44,11 @@ body {
 }
 
 /*-------- MENU LINKS --------*/
-/* nav a.nav-link {
+nav a.nav-link {
   font-weight: 300;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   letter-spacing: 0.0375rem;
-} */
+}
 
 nav ul li {
   text-transform: uppercase;
