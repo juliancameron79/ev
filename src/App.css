@@ -1,38 +1,246 @@
-.App {
-  text-align: center;
+:root {
+  --primary-white: hsl(0, 0%, 100%);
+  --primary-white-50: hsl(0, 0%, 89%);
+  --primary-transparent-blue: hsla(240, 100%, 27%, 0.38);
+  --primary-light-grey: hsl(240, 100%, 96%);
+  --primary-white-smoke: hsl(0, 0%, 96%);
+  --primary-pale-blue: hsl(240, 100%, 96%);
+  --primary-orange: hsl(31, 86%, 49%);
+  --primary-navy-blue: hsl(240, 100%, 27%);
+  --primary-dark-navy-blue: hsl(240, 100%, 4%);
+  --primary-light-navy-blue: hsl(240, 100%, 96%);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.site-section {
+  padding: 8rem 0;
+}
+
+/******************************* NAVBAR *******************************/
+
+.navbar {
+  background-color: var(--primary-transparent-blue) !important;
+  -webkit-backdrop-filter: saturate(180%) blur(50px);
+  backdrop-filter: saturate(50%) blur(20px);
+  border-bottom: solid 1px var(--primary-light-grey);
+}
+.navbar-toggler {
+  border: 0 !important;
+}
+
+.navbar-brand {
+  -webkit-animation: navIconAnimate 1s both;
+  animation: navIconAnimate 1s both;
+}
+
+.navbar-brand i {
+  transform: rotate(45deg);
+}
+
+/*-------- MENU LINKS --------*/
+/* nav a.nav-link {
+  font-weight: 300;
+  font-size: 0.8rem;
+  letter-spacing: 0.0375rem;
+} */
+
+nav ul li {
+  text-transform: uppercase;
+}
+
+.navbar-nav > li > a {
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+  color: var(--primary-white-50) !important;
+}
+
+.navbar-nav > li > a.active,
+.navbar-nav > li > a:focus {
+  font-weight: 400;
+  color: var(--primary-white) !important;
+}
+
+.navbar-nav > li > a:hover {
+  font-weight: 400;
+  color: var(--primary-white) !important;
+}
+
+/* ------------ MEDIA ------------ */
+
+@keyframes navIconAnimate {
+  0% {
+    transform: translateY(-2000px);
+  }
+  60% {
+    transform: translateY(30px);
+  }
+  80% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/******************************* HEADER *******************************/
+
+.pin-about {
+  position: relative;
+  height: 100vh;
+  background: url("forced-perspective-cars-on-road-below-mobile.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* background-blend-mode: luminosity; */
+}
+
+.overlay {
+  background-color: rgba(4, 7, 70, 0.3);
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.main-info {
   display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  text-align: start;
+  z-index: 1;
 }
 
-.App-link {
-  color: #61dafb;
+.about-row {
+  display: flex;
+  justify-content: center;
+  align-content: space-around;
+  height: 100vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.text-background {
+  position: relative;
+  bottom: -22%;
+  padding: 1rem;
+  background-color: var(--primary-white-smoke);
+  height: auto;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border: 2px solid var(--primary-pale-blue);
+}
+
+h1.header-title {
+  /* font-family: "Oswald", sans-serif; */
+  text-align: center;
+  font-size: 2rem;
+  /* font-weight: 400; */
+  margin-bottom: 1rem;
+}
+
+p.lead-header-text {
+  color: var(--primary-orange);
+  text-align: justify;
+  margin-bottom: 0;
+}
+
+/******************************* ABOUT *******************************/
+
+/******************************* MAP *******************************/
+
+/******************************* CONTACT *******************************/
+
+.contact-us-container {
+  background-color: var(--primary-light-navy-blue);
+}
+
+.contact-us-row {
+  background-color: var(--primary-light-navy-blue);
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+p.lead-contact-us-text {
+  font-weight: 500;
+  text-align: justify;
+}
+
+.email-container {
+  height: 100%;
+}
+
+.btn-contact-submit {
+  background-color: var(--primary-navy-blue);
+  border-color: var(--primary-dark-navy-blue);
+}
+
+.btn-contact-submit:hover {
+  background-color: hsl(240, 100%, 85%);
+  border-color: var(--primary-navy-blue);
+}
+
+/******************************* FOOTER *******************************/
+
+.footer {
+  background-color: var(--primary-dark-navy-blue);
+  height: auto;
+}
+
+.copyright {
+  color: var(--primary-white);
+  font-size: 0.7rem;
+  margin: 0.2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.social-icons-list-items {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+ul.social-icons {
+  margin-bottom: 8px;
+}
+
+.social-icons li a {
+  margin-bottom: 0;
+  width: 32px;
+  height: 32px;
+  padding: 12px;
+  border-radius: 25%;
+  font-size: 13px;
+  line-height: 7px;
+  text-align: center;
+  color: #fff;
+  border: 2px solid var(--primary-dark-navy-blue);
+  -moz-transition: all 0.35s ease-in-out;
+  -webkit-transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out;
+}
+
+.social-icons li a:hover {
+  border: 2px solid var(--primary-white);
+}
+
+.social-icons {
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+h5.footer-contact-title {
+  font-weight: 300;
 }
