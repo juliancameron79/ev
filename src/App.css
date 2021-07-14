@@ -121,6 +121,14 @@ nav ul li {
   z-index: 1;
 }
 
+.header {
+  font-weight: 100;
+}
+
+.header-icon {
+  size: 3rem;
+}
+
 .about-row {
   display: flex;
   justify-content: center;
@@ -130,7 +138,6 @@ nav ul li {
 
 .text-background {
   position: relative;
-  bottom: -22%;
   padding: 1rem;
   background-color: var(--primary-white-smoke);
   height: auto;
@@ -143,7 +150,7 @@ nav ul li {
 
 .header-title {
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin-bottom: 1rem;
 }
 
@@ -157,7 +164,7 @@ p.lead-header-text {
 
 @media (max-width: 768px) {
   .header {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 }
 
