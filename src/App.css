@@ -9,6 +9,7 @@
   --primary-navy-blue: hsl(240, 100%, 27%);
   --primary-dark-navy-blue: hsl(240, 100%, 4%);
   --primary-light-navy-blue: hsl(240, 100%, 96%);
+  --primary-gray-dark: hsl(210, 10%, 23%);
 }
 
 body {
@@ -161,6 +162,30 @@ p.lead-header-text {
 }
 
 /******************************* ABOUT *******************************/
+
+.bg-pattern {
+  background: url("pattern.svg");
+}
+
+.about-heading {
+  color: var(--primary-gray-dark);
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 3rem;
+}
+
+.about-text {
+  background-color: var(--primary-white);
+  padding: 1.5rem 1rem;
+}
+
+/* ------------ MEDIA ------------ */
+
+@media (max-width: 768px) {
+  .about-heading {
+    font-size: 2.5rem;
+  }
+}
 
 /******************************* MAP *******************************/
 
