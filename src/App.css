@@ -202,6 +202,13 @@ p.lead-header-text {
   background-color: var(--primary-light-navy-blue);
 }
 
+.contact-heading {
+  color: var(--primary-gray-dark);
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 3rem;
+}
+
 .contact-us-row {
   background-color: var(--primary-light-navy-blue);
   height: auto;

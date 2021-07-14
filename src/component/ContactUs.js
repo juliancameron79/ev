@@ -6,8 +6,8 @@ const Contact = () => {
       <div className="container-fluid">
         <div className="row contact-us-row">
           <div className="col-12 col-md-9">
-            <div className="display-4 text-center mb-5">Contact Us</div>
-            <p className="lead-contact-us-text">If you would like us to add your charging station to our ever growing network, feel free to drop us an email with a brief description along with your contact details and we will get back to you.</p>
+            <div className="display-4 contact-heading text-center mb-5">Contact Us</div>
+            <p className="lead-contact-us-text mb-4">If you would like us to add your charging station to our ever growing network, feel free to drop us an email with a brief description along with your contact details and we will get back to you.</p>
           </div>
           <div className="col-121 col-md-9">
             <div className="card px-3 py-4">
