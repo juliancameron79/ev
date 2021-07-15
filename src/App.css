@@ -22,6 +22,14 @@ body {
   padding: 8rem 0;
 }
 
+/* ------------ MEDIA ------------ */
+
+@media (max-width: 768px) {
+  .site-section {
+    padding: 5rem 0;
+  }
+}
+
 /******************************* NAVBAR *******************************/
 
 .navbar {
@@ -234,6 +242,14 @@ p.lead-contact-us-text {
 .btn-contact-submit:hover {
   background-color: hsl(240, 100%, 85%);
   border-color: var(--primary-navy-blue);
+}
+
+/* ------------ MEDIA ------------ */
+
+@media (max-width: 768px) {
+  .contact-heading {
+    font-size: 2.5rem;
+  }
 }
 
 /******************************* FOOTER *******************************/
